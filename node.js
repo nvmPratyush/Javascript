@@ -1,7 +1,6 @@
 //  Comments
-
+// this is single line
 // This is comment
-
 /*
 This 
 is 
@@ -9,25 +8,23 @@ multi
 line 
 comment
 */
-// multi line commen can end in one line also
+// multi line comment can end in one line also
 
-const hibox = /* hi this comment can end on this line */ (x,y)=>{
-    return x+y
-}
+const hibox = /* hi this comment can end on this line */ (x, y) => {
+    return x + y;
+};
 
 // to print any text
-{
-console.log("hi, everyone")
-}
+console.log("hi, everyone");
 
 // DataTypes
-null // null (nothing)
-123 // number (any number)
-Symbol('hi') // Symbol
-"Hello" // String (any text in doble quates, single quates or backtick(You'll know where is backtick is used for in line 237))
-BigInt(654321) // BigInt (Big numbers (Same as number))
-true // Boolen (can be false)
-undefined // Undefined (not defined but can be defined at later)
+null; // null (nothing)
+123; // number (any number)
+Symbol('hi'); // Symbol
+"Hello"; // String (any text in doble quates, single quates or backtick(You'll know where is backtick is used for in line 237))
+BigInt(654321); // BigInt (Big numbers (Same as number))
+true; // Boolen (can be false)
+undefined; // Undefined (not defined but can be defined at later)
 // You can use ; at end of DataTypes
 
 /*
@@ -38,7 +35,6 @@ String
 Bigint
 Boolen
 Undefined
-
 N N S S B B U
 */
 
@@ -53,201 +49,155 @@ N N S S B B U
     }
 }
 
-// Variables (contaners to store DataTypes  by let var const)
-let a = "hello" // best and not globely
-var b = "hello" // globely (but, can us in loop when we want loop variable globaly)
-const c = "hello" // Same as let but also contain function, box and object n key with box 
+// Variables (contaners to store DataTypes by let var const)
+let a = "hello"; // best and not globely
+var b = "hello"; // globely (but, can us in loop when we want loop variable globaly)
+const c = "hello"; // Same as let but also contain function, box and object n key with box 
 
 // Operator
-/*
 
 // Arithmetic Operator
-{
-1+2 // Addition
-1-2 // Subtraction\
-1*2 // Multiplication
-1/2 // Diviation
-1++2 // + 1 
-1--2 // -1
-1**2 // Exponantion (power of)
-}
+1 + 2; // Addition
+1 - 2; // Subtraction
+1 * 2; // Multiplication
+1 / 2; // Diviation
+1++; // + 1 
+1--; // -1
+1 ** 2; // Exponantion (power of)
 
 // Assignment Operator
-{
-1 += 2 // Same a ` 1 + 2 `   //fox in
-let a1 = 1
-a1 +=  2 // Same a `a = 1 + 2 `
-1 -= 2
-1 *= 2
-1 /= 2
-}
+1 += 2; // Same a ` 1 + 2 `   //fox in
+let a1 = 1;
+a1 += 2; // Same a `a = 1 + 2 `
+1 -= 2;
+1 *= 2;
+1 /= 2;
 
 // Comparison Operator
-{
-== // Equal to
-!= // Not equal to
-=== // Equal value and type
-!== // Not equal value and type
-> // Greater than
-< // Less than
->= // Greater than and equal to 
-<= // Less than and equal to
-? // Termary oprator
-}
+==; // Equal to
+!=; // Not equal to
+===; // Equal value and type
+!==; // Not equal value and type
+>; // Greater than
+<; // Less than
+>=; // Greater than and equal to 
+<=; // Less than and equal to
+?; // Termary oprator
 
 // Logical Operator
-{
-&& // logical and
-|| // logical or
-! // logical not
-}
+&&; // logical and
+||; // logical or
+!; // logical not
 
-*/
 // Function
-{
-
-    function hello(){
-        console.log("Hello, wrold")
-    }
-hello()
-
+function hello() {
+    console.log("Hello, wrold");
 }
+hello();
+
 // Function can written also like this:
-
-const plus = (x,y)=>{
-    console.log(x+y)
-}
-
+const plus = (x, y) => {
+    console.log(x + y);
+};
 
 // Loops
 // For loops
 // For loop
-{
-
-    for (i = 1; i<10; i++){
-        console.log(i+1)
-    }
-
+for (i = 1; i < 10; i++) {
+    console.log(i + 1);
 }
 
 // for in loop
+// To print every object
+const obj = {
+    Pratyush: 80,
+    Rohan: 72,
+    Shiva: 49,
+    Lovish: 64,
+};
+for (let a in obj) {
+    console.log(a);
+}
+// To print every key
+const obj = {
+    Pratyush: 80,
+    Rohan: 72,
+    Shiva: 49,
+    Lovish: 64,
+};
+for (let a in obj) {
+    console.log(obj[a]);
+}
+// To print every object with "marks of"
+const obj = {
+    Pratyush: 80,
+    Rohan: 72,
+    Shiva: 49,
+    Lovish: 64,
+};
+for (let a in obj) {
+    console.log("marks of " + a);
+}
+// To print every key with "is "
+const obj = {
+    Pratyush: 80,
+    Rohan: 72,
+    Shiva: 49,
+    Lovish: 64,
+};
+for (let a in obj) {
+    console.log("is " + a);
+}
+// To print marks of student in readable way
+const obj = {
+    Pratyush: 80,
+    Rohan: 72,
+    Shiva: 49,
+    Lovish: 64,
+};
 {
-    // To print every object
-    const obj = {
-            Pratyush: 80,
-            Rohan: 72,
-            Shiva: 49,
-            Lovish: 64,
-    
-        }
-    
-        for (let a in obj){
-            console.log(a)
-        }
-    }
-    // To print every key
-    {
-        const obj = {
-            Pratyush: 80,
-            Rohan: 72,
-            Shiva: 49,
-            Lovish: 64,
-    
-        }
-    
-        for (let a in obj){
-            console.log(obj[a])
-        }
-    }
-    // To print every object with "marks of"
-    {
-        const obj = {
-            Pratyush: 80,
-            Rohan: 72,
-            Shiva: 49,
-            Lovish: 64,
-    
-        }
-    
-        for (let a in obj){
-            console.log("marks of " + a)
-        }
-    }
-    // To print every key with "is "
-    {
-        const obj = {
-            Pratyush: 80,
-            Rohan: 72,
-            Shiva: 49,
-            Lovish: 64,
-    
-        }
-    
-        for (let a in obj){
-            console.log("is " + a)
-        }
-    }
-    // To print marks of student in readable way
-    {
-        const obj = {
-            Pratyush: 80,
-            Rohan: 72,
-            Shiva: 49,
-            Lovish: 64,
-    
-        }
-        {
-    
-        for (let a in obj){
-            console.log("marks of " + a + " is " + obj[a])
-        }
+    for (let a in obj) {
+        console.log("marks of " + a + " is " + obj[a]);
     }
 }
 
 // for of loop
-{
-    for (let b of "Pratyush"){
-        console.log(b)
-    }
+for (let b of "Pratyush") {
+    console.log(b);
 }
 
-
 // lets run plus function
-
-plus(16,4) 
-
+plus(16, 4);
 
 // String
-let myName = "Pratyush"
-console.log(myName)
+let myName = "Pratyush";
+console.log(myName);
 
 // Length
-console.log(myName.length)
+console.log(myName.length);
 
 // Write Characters
-console.log(myName[0])
-console.log(myName[1])
-console.log(myName[2])
-console.log(myName[3])
-console.log(myName[4])
-console.log(myName[5])
-console.log(myName[6])
-console.log(myName[7])
+console.log(myName[0]);
+console.log(myName[1]);
+console.log(myName[2]);
+console.log(myName[3]);
+console.log(myName[4]);
+console.log(myName[5]);
+console.log(myName[6]);
+console.log(myName[7]);
 
 // String interploation
 // console.log( `hi my name is `${myName}`` ) // If backtick is there
-
 // let a2 =  "Hi' //don't do
 // let a2 = `hi' // Can do
 // let a2 = `hi" // Can do
 
 // Escape sequance Character
 // let fruite = 'bana'na'
-let fruite = 'bana\'na'
-console.log(fruite)
+let fruite = 'bana\'na';
+console.log(fruite);
 
 // type Escape sequance Characters
-
 /*
 {
 
@@ -259,69 +209,68 @@ console.log(fruite)
 */
 
 // String properties and Methods
-let name1 = "Pratyush"
-console.log(name1.length) // prints 8
+let name1 = "Pratyush";
+console.log(name1.length); // prints 8
 
-let name2 = "Pratyush"
-console.log(name2.toLocaleUpperCase()) //prints PRATYUSH
+let name2 = "Pratyush";
+console.log(name2.toLocaleUpperCase()); //prints PRATYUSH
 
-let name3 = "Pratyush" 
-console.log(name3.toLocaleLowerCase()) // prints pratyush
+let name3 = "Pratyush";
+console.log(name3.toLocaleLowerCase()); // prints pratyush
 
-//           Pratyush
-//           ^^^^^^^^
-//           01234567     
+// Pratyush
+// ^^^^^^^^
+// 01234567     
 
-let name4 = "Pratyush"
-console.log(name4.slice(0)) // prints P
-console.log(name4.slice(1)) // prints r
-console.log(name4.slice(2)) // prints a
-console.log(name4.slice(3)) // prints t
-console.log(name4.slice(4)) // prints y
-console.log(name4.slice(5)) // prints u
-console.log(name4.slice(6)) // prints s
-console.log(name4.slice(5)) // prints h
-console.log(name4.slice(2,4)) // prints at
+let name4 = "Pratyush";
+console.log(name4.slice(0)); // prints P
+console.log(name4.slice(1)); // prints r
+console.log(name4.slice(2)); // prints a
+console.log(name4.slice(3)); // prints t
+console.log(name4.slice(4)); // prints y
+console.log(name4.slice(5)); // prints u
+console.log(name4.slice(6)); // prints s
+console.log(name4.slice(5)); // prints h
+console.log(name4.slice(2, 4)); // prints at
 
-console.log(name4[0]) // prints P
-console.log(name4[1]) // prints r
-console.log(name4[2]) // prints a
-console.log(name4[3]) // prints t
-console.log(name4[4]) // prints y
-console.log(name4[5]) // prints u
-console.log(name4[6]) // prints s
-console.log(name4[7]) // prints h
+console.log(name4[0]); // prints P
+console.log(name4[1]); // prints r
+console.log(name4[2]); // prints a
+console.log(name4[3]); // prints t
+console.log(name4[4]); // prints y
+console.log(name4[5]); // prints u
+console.log(name4[6]); // prints s
+console.log(name4[7]); // prints h
 
-let name5 = "Pratyush"
-console.log(name5.replace("Pratyush", "Aamina")) // prints Aamina
+let name5 = "Pratyush";
+console.log(name5.replace("Pratyush", "Aamina")); // prints Aamina
 
-let name52 = "Pratyush bhai"
-console.log(name2.replace("bhai", "bro")) // prints Pratyush bro
+let name52 = "Pratyush bhai";
+console.log(name2.replace("bhai", "bro")); // prints Pratyush bro
 
-let name53 = "Pratyush"
-console.log(name53.replace("Pra", "Ara")) // prints Aratyush
+let name53 = "Pratyush";
+console.log(name53.replace("Pra", "Ara")); // prints Aratyush
 
-let name6 = "Pratyush"
-let friend = "Nikesh"
-console.log(name6.concat(" is friend of ", friend)) // prints Pratyush is friend of Nikesh 
+let name6 = "Pratyush";
+let friend = "Nikesh";
+console.log(name6.concat(" is friend of ", friend)); // prints Pratyush is friend of Nikesh 
 
-let name7 = "          Pratyush          "
-console.log(name7.trim()) // prints Pratyush
+let name7 = "          Pratyush          ";
+console.log(name7.trim()); // prints Pratyush
 
 let sentence = 'The quick brown fox jumps over the lazy dog.';
 let word = 'fox2';
-console.log(sentence.includes(word))
+console.log(sentence.includes(word));
 
 // QuikQuiz:  Use for loop to print a string in js
 let myString = "Hello, World!";
 
 for (let i = 0; i < myString.length; i++) {
-  console.log(myString[i]);
+    console.log(myString[i]);
 }
 
 // QuikQuiz:  Write a program to find out whether a student a is pass or fail; if it requires total 40% pass and at least 33% in each subject to pass. Assume 3 subjects and take marks as an imput from the user.
 
-/*
 // Function to check if the student passes or fails
 function checkPassOrFail(Hindi, English, Maths) {
     // Calculate total marks and percentage
@@ -349,76 +298,82 @@ if (isNaN(subject1Marks) || isNaN(subject2Marks) || isNaN(subject3Marks)) {
     const result = checkPassOrFail(subject1Marks, subject2Marks, subject3Marks);
     console.log(result);
 }
-*/
 
 // Array
-let array = [0,1,2,3,4,5,6,7,8,9]
+let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-let marksOf12th = [800,450,679,4,730,104,98,135,348,0, null, 31, false, "Not present",735,163,(404),391,496,241,714,688,8,377,(143),522,522,529,344,390,380,210,86,56,162,166,704,606,6,32,449,(400),199,,47,692,781,61] // out of 800
+let marksOf12th = [800, 450, 679, 4, 730, 104, 98, 135, 348, 0, null, 31, false, "Not present", 735, 163, (404), 391, 496, 241, 714, 688, 8, 377, (143), 522, 522, 529, 344, 390, 380, 210, 86, 56, 162, 166, 704, 606, 6, 32, 449, (400), 199, , 47, 692, 781, 61]; // out of 800
 
-console.log(marksOf12th[0])
-console.log(marksOf12th[1])
-console.log(marksOf12th[2])
-console.log(marksOf12th[3])
-console.log(marksOf12th[4])
-console.log(marksOf12th[5])
-console.log(marksOf12th[6])
-console.log(marksOf12th[7])
-console.log(marksOf12th[8])
-console.log(marksOf12th[9])
-console.log(marksOf12th[10])
-console.log(marksOf12th[11])
-console.log(marksOf12th[12])
-console.log(marksOf12th[13])
-console.log(marksOf12th[14])
-console.log(marksOf12th[15])
-console.log(marksOf12th[16])
-console.log(marksOf12th[17])
-console.log(marksOf12th[18])
-console.log(marksOf12th[19])
-console.log(marksOf12th[20])
-console.log(marksOf12th[21])
-console.log(marksOf12th[22])
-console.log(marksOf12th[23])
-console.log(marksOf12th[24])
-console.log(marksOf12th[25])
-console.log(marksOf12th[26])
-console.log(marksOf12th[27])
-console.log(marksOf12th[28])
-console.log(marksOf12th[29])
-console.log(marksOf12th[30])
-console.log(marksOf12th[31])
-console.log(marksOf12th[32])
-console.log(marksOf12th[33])
-console.log(marksOf12th[34])
-console.log(marksOf12th[35])
-console.log(marksOf12th[36])
-console.log(marksOf12th[37])
-console.log(marksOf12th[38])
-console.log(marksOf12th[39])
-console.log(marksOf12th[40])
-console.log(marksOf12th[41])
-console.log(marksOf12th[42])
-console.log(marksOf12th[43])
-console.log(marksOf12th[44])
-console.log(marksOf12th[45])
-console.log(marksOf12th[46])
-console.log(marksOf12th[47])
-console.log(marksOf12th[48])
+console.log(marksOf12th[0]);
+console.log(marksOf12th[1]);
+console.log(marksOf12th[2]);
+console.log(marksOf12th[3]);
+console.log(marksOf12th[4]);
+console.log(marksOf12th[5]);
+console.log(marksOf12th[6]);
+console.log(marksOf12th[7]);
+console.log(marksOf12th[8]);
+console.log(marksOf12th[9]);
+console.log(marksOf12th[10]);
+console.log(marksOf12th[11]);
+console.log(marksOf12th[12]);
+console.log(marksOf12th[13]);
+console.log(marksOf12th[14]);
+console.log(marksOf12th[15]);
+console.log(marksOf12th[16]);
+console.log(marksOf12th[17]);
+console.log(marksOf12th[18]);
+console.log(marksOf12th[19]);
+console.log(marksOf12th[20]);
+console.log(marksOf12th[21]);
+console.log(marksOf12th[22]);
+console.log(marksOf12th[23]);
+console.log(marksOf12th[24]);
+console.log(marksOf12th[25]);
+console.log(marksOf12th[26]);
+console.log(marksOf12th[27]);
+console.log(marksOf12th[28]);
+console.log(marksOf12th[29]);
+console.log(marksOf12th[30]);
+console.log(marksOf12th[31]);
+console.log(marksOf12th[32]);
+console.log(marksOf12th[33]);
+console.log(marksOf12th[34]);
+console.log(marksOf12th[35]);
+console.log(marksOf12th[36]);
+console.log(marksOf12th[37]);
+console.log(marksOf12th[38]);
+console.log(marksOf12th[39]);
+console.log(marksOf12th[40]);
+console.log(marksOf12th[41]);
+console.log(marksOf12th[42]);
+console.log(marksOf12th[43]);
+console.log(marksOf12th[44]);
+console.log(marksOf12th[45]);
+console.log(marksOf12th[46]);
+console.log(marksOf12th[47]);
+console.log(marksOf12th[48]);
 
-console.log(marksOf12th.length)
+console.log(marksOf12th.length);
 
-marksOf12th[26] = 516
+marksOf12th[26] = 516;
 
-console.log(marksOf12th)
+console.log(marksOf12th);
 
-let numbers = [1 , 2 ,3 , 4]
-console.log(numbers)
+let numbers = [1, 2, 3, 4];
+console.log(numbers);
 
-console.log(numbers.toString()) // converts array into string 
+console.log(numbers.toString()); // converts array into string 
 
-console.log(numbers.join(" and ")) // Replaces , to join number with given text in string
+console.log(numbers.join(" and ")); // Replaces , to join number with given text in string
 
-console.log(numbers.pop) // Will remove last item from array
+console.log(numbers.pop); // Will remove last item from array
 
-let lastOfNumbersArray = numbers.pop()
+let lastOfNumbersArray = numbers.pop(); // will return last number of array
+console.log(lastOfNumbersArray);
+
+console.log(numbers.push(56)); // Will add new element to end of array
+
+console.log(numbers.shift()); // Will remove first item from array
+
+console.log(numbers.unshift(78)); // Will add new element to start of array
