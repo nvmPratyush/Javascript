@@ -187,18 +187,18 @@ console.log(myName[6]);
 console.log(myName[7]);
 
 // String interploation
-// console.log( `hi my name is `${myName}`` ) // If backtick is there
-// let a2 =  "Hi' //don't do
-// let a2 = `hi' // Can do
-// let a2 = `hi" // Can do
+console.log( `hi my name is `${myName}`` ) // If backtick is there
+let a2 =  "Hi' //don't do
+let a2 = `hi' // Can do
+let a2 = `hi" // Can do
 
 // Escape sequance Character
-// let fruite = 'bana'na'
+let fruite = 'bana'na'
 let fruite = 'bana\'na';
 console.log(fruite);
 
 // type Escape sequance Characters
-/*
+
 {
 
 \n (new line)
@@ -206,7 +206,7 @@ console.log(fruite);
 \r Carrige return
 
 }
-*/
+
 
 // String properties and Methods
 let name1 = "Pratyush";
@@ -218,9 +218,9 @@ console.log(name2.toLocaleUpperCase()); //prints PRATYUSH
 let name3 = "Pratyush";
 console.log(name3.toLocaleLowerCase()); // prints pratyush
 
-// Pratyush
-// ^^^^^^^^
-// 01234567     
+Pratyush
+^^^^^^^^
+01234567     
 
 let name4 = "Pratyush";
 console.log(name4.slice(0)); // prints P
